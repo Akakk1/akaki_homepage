@@ -73,8 +73,10 @@ nav button:hover {
     background-color: white;  /* 按钮背景为白色 */
     color: black;  /* 按钮文本颜色为黑色 */
     border: none;  /* 去掉边框 */
-    border-radius: 5px;  /* 增加圆角 */
+    border-radius: 25px;  /* 增加圆角 */
     cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;    
 }
 
 /* 鼠标悬停效果 */
@@ -95,10 +97,10 @@ nav button:hover {
 /* Welcome文本样式 */
 .welcome-text {
     position: absolute;
-    bottom: 40%;  /* 调整距离底部的距离，可以根据需要微调 */
-    left: 20%;    /* 调整距离左侧的距离，可以根据需要微调 */
+    bottom: 20%;  /* 调整距离底部的距离，可以根据需要微调 */
+    left: 10%;    /* 调整距离左侧的距离，可以根据需要微调 */
     transform: translate(-50%, 50%);
-    font-size: 4rem;  /* 增大字体 */
+    font-size: 10rem;  /* 增大字体 */
     font-weight: bold;  /* 加粗 */
     color: white;       /* 白色字体，保持与背景的对比 */
 }
