@@ -14,7 +14,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
     background-color: #000000;
     position: sticky;
@@ -22,7 +22,6 @@ nav ul {
 }
 
 nav li {
-    flex: 1;
     text-align: center;
 }
 
@@ -30,7 +29,7 @@ nav button {
     background: none;
     border: none;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 1.5vw;
     cursor: pointer;
     padding: 10px 20px;
     transition: color 0.3s ease-in-out;
@@ -64,15 +63,15 @@ nav button:hover {
 /* Go to Github按钮样式 */
 .github-button {
     position: absolute;
-    bottom: 12%;  /* 距离底部的距离，略微低于Welcome */
-    left: 8%;    /* 保持与Welcome左对齐 */
-    padding: 10px 15px;  /* 调整按钮大小 */
-    font-size: 1rem;  /* 适中字体大小 */
+    bottom: 5%;  /* 距离底部的距离，略微低于Welcome */
+    left: 5%;
+    padding: 0.3vw 0.8vw;  /* 调整按钮大小 */
+    font-size: 1.5vw;  /* 适中字体大小 */
     font-weight: lighter;  /* 加粗 */
     background-color: white;  /* 按钮背景为白色 */
     color: black;  /* 按钮文本颜色为黑色 */
     border: none;  /* 去掉边框 */
-    border-radius: 25px;  /* 增加圆角 */
+    border-radius: 25vw;  /* 增加圆角 */
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s ease-in-out;    
@@ -88,9 +87,9 @@ nav button:hover {
 /* 图片设置在右下角 */
 .bottom-right-image {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 200px;
+    bottom: 0%;
+    right: 0%;
+    max-width: 80vw;
     height: auto;
 }
 
@@ -100,7 +99,7 @@ nav button:hover {
     bottom: 5%;  /* 调整距离底部的距离，可以根据需要微调 */
     left: 5%;    /* 调整距离左侧的距离，可以根据需要微调 */
     font-weight: lighter;
-    font-size: 10rem;  /* 增大字体 */
+    font-size: 10vw;  /* 增大字体 */
     font-family: 'Times New Roman', 'Georgia', serif;
     color: white;       /* 白色字体，保持与背景的对比 */
 }
