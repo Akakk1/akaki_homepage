@@ -61,26 +61,6 @@ nav button:hover {
     background-color: #e0e0e0;
 }
 
-/* 图片设置在右下角 */
-.bottom-right-image {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 200px;
-    height: auto;
-}
-
-/* Welcome文本样式 */
-.welcome-text {
-    position: absolute;
-    bottom: 40%;  /* 调整距离底部的距离，可以根据需要微调 */
-    left: 20%;    /* 调整距离左侧的距离，可以根据需要微调 */
-    transform: translate(-50%, 50%);
-    font-size: 4rem;  /* 增大字体 */
-    font-weight: bold;  /* 加粗 */
-    color: white;       /* 白色字体，保持与背景的对比 */
-}
-
 /* Go to Github按钮样式 */
 .github-button {
     position: absolute;
@@ -101,6 +81,28 @@ nav button:hover {
 .github-button:hover {
     background-color: #e0e0e0;  /* 鼠标悬停时的背景色 */
 }
+
+
+/* 图片设置在右下角 */
+.bottom-right-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: auto;
+}
+
+/* Welcome文本样式 */
+.welcome-text {
+    position: absolute;
+    bottom: 40%;  /* 调整距离底部的距离，可以根据需要微调 */
+    left: 20%;    /* 调整距离左侧的距离，可以根据需要微调 */
+    transform: translate(-50%, 50%);
+    font-size: 4rem;  /* 增大字体 */
+    font-weight: bold;  /* 加粗 */
+    color: white;       /* 白色字体，保持与背景的对比 */
+}
+
 
 
 /* 滑出的圆角矩形 */
