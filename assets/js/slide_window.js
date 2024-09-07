@@ -2,10 +2,17 @@
 document.querySelectorAll('.nav-btn').forEach(button => {
     button.addEventListener('click', function() {
         let panel = document.getElementById('sliding-panel');
-        panel.style.display = 'block';
-        setTimeout(() => {
-            panel.style.opacity = 1;
-            panel.style.top = '150px'; // 向下滑动的效果
-        }, 50);
+        
+        // 设置圆角矩形滑动效果
+        panel.style.opacity = 1;
+        panel.style.top = '100px';  // 滑动到可见区域
+
+        // 点击其他地方时隐藏
+        document.body.addEventListener('click', function(event) {
+            if (!event.target.closest('.nav-btn') && !event.target.closest('.sliding-panel')) {
+                panel.style.opacity = 0;
+                panel.style.top = '-300px';  // 滑动回顶部隐藏
+            }
+        }, { once: true });
     });
 });
