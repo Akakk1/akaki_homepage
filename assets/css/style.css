@@ -98,9 +98,9 @@ nav button:hover {
 .welcome-text {
     position: absolute;
     bottom: 20%;  /* 调整距离底部的距离，可以根据需要微调 */
-    left: 10%;    /* 调整距离左侧的距离，可以根据需要微调 */
+    left: 15%;    /* 调整距离左侧的距离，可以根据需要微调 */
     transform: translate(-50%, 50%);
-    font-size: 15rem;  /* 增大字体 */
+    font-size: 10rem;  /* 增大字体 */
     font-weight: bold;  /* 加粗 */
     color: white;       /* 白色字体，保持与背景的对比 */
 }
