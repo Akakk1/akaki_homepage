@@ -2,37 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <div class="navbar">
-        <button class="nav-button" data-content="education">Education & Experience</button>
-        <button class="nav-button" data-content="research">Research Interests</button>
-        <button class="nav-button" data-content="papers">Papers</button>
-        <button class="nav-button" data-content="softwares">Softwares</button>
-        <button class="nav-button" data-content="contact">Contact</button>
+    <!-- 顶部导航栏 -->
+    <nav>
+        <ul>
+            <li>Education & Experience</li>
+            <li>Research Interests</li>
+            <li>Papers</li>
+            <li>Softwares</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- 欢迎信息 -->
+    <div class="welcome">
+        <h1>Welcome</h1>
+        <button id="slideButton">显示信息</button>
     </div>
 
-    <div class="content">
-        <div class="welcome-section">
-            <h1>Welcome</h1>
-            <a href="https://github.com/Akakk1" class="github-button">Go to Github</a>
-        </div>
-        <div class="placeholder-image">
-            <!-- Placeholder for the anime character image -->
-            <img src="placeholder.png" alt="Anime Character">
-        </div>
+    <!-- 动漫角色占位符图片 -->
+    <div class="character-placeholder"></div>
+
+    <!-- 底部按钮 -->
+    <a href="https://github.com/Akakk1" class="github-button">Go to Github</a>
+
+    <!-- 滑出矩形框 -->
+    <div id="slideWindow" class="slide-window">
+        <p>这里是文本内容...</p>
     </div>
 
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modal-text"></div>
-        </div>
-    </div>
-
-    <script src="assets/js/slide_window.js"></script>
+    <script src="/assets/js/slide_window.js"></script>
 </body>
 </html>
