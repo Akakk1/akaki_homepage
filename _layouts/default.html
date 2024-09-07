@@ -2,38 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+
     <!-- 顶部导航栏 -->
     <nav>
         <ul>
-            <li>Education & Experience</li>
-            <li>Research Interests</li>
-            <li>Papers</li>
-            <li>Softwares</li>
-            <li>Contact</li>
+            <li><button class="nav-btn" id="edu-exp">Education & Experience</button></li>
+            <li><button class="nav-btn" id="research">Research Interests</button></li>
+            <li><button class="nav-btn" id="papers">Papers</button></li>
+            <li><button class="nav-btn" id="software">Softwares</button></li>
+            <li><button class="nav-btn" id="contact">Contact</button></li>
         </ul>
     </nav>
 
-    <!-- 欢迎信息 -->
-    <div class="welcome">
+    <!-- 内容区域 -->
+    <div class="content">
         <h1>Welcome</h1>
-        <button id="slideButton">显示信息</button>
+        <button class="button" onclick="window.location.href='https://github.com/Akakk1'">Go to Github</button>
+        <img src="xxx.png" alt="Character Image" class="bottom-right-image">
     </div>
 
-    <!-- 动漫角色占位符图片 -->
-    <div class="character-placeholder"></div>
-
-    <!-- 底部按钮 -->
-    <a href="https://github.com/Akakk1" class="github-button">Go to Github</a>
-
-    <!-- 滑出矩形框 -->
-    <div id="slideWindow" class="slide-window">
-        <p>这里是文本内容...</p>
+    <!-- 滑出的圆角矩形文本框 -->
+    <div class="sliding-panel" id="sliding-panel">
+        <p>This is the sliding panel content for the section you clicked!</p>
     </div>
 
+    <!-- 引入外部 JS 文件 -->
     <script src="/assets/js/slide_window.js"></script>
 </body>
 </html>
