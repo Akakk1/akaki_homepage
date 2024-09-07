@@ -1,0 +1,145 @@
+/* 全局样式 */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* 导航栏样式 */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    flex: 10vw;
+    text-align: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 3vw;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav button:hover {
+    color: #6f0000;
+}
+
+/* 主内容区域 */
+.content h1 {
+    font-size: 4rem;
+    margin-top: 100px;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Go to Github按钮样式 */
+.github-button {
+    position: absolute;
+    bottom: 8vw;  /* 距离底部的距离，略微低于Welcome */
+    left: 8vw;
+    padding: 1vw 2vw;  /* 调整按钮大小 */
+    font-size: 2vw;  /* 适中字体大小 */
+    font-weight: lighter;  /* 加粗 */
+    background-color: white;  /* 按钮背景为白色 */
+    color: black;  /* 按钮文本颜色为黑色 */
+    border: none;  /* 去掉边框 */
+    border-radius: 25px;  /* 增加圆角 */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;    
+}
+
+/* 鼠标悬停效果 */
+.github-button:hover {
+    background-color: #4a0000;  /* 鼠标悬停时的背景色 */
+    color: white;
+}
+
+
+/* 图片设置在右下角 */
+.bottom-right-image {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Welcome文本样式 */
+.welcome-text {
+    position: absolute;
+    bottom: 5%;  /* 调整距离底部的距离，可以根据需要微调 */
+    left: 5%;    /* 调整距离左侧的距离，可以根据需要微调 */
+    font-weight: lighter;
+    font-size: 20vw;  /* 增大字体 */
+    font-family: 'Times New Roman', 'Georgia', serif;
+    color: white;       /* 白色字体，保持与背景的对比 */
+}
+
+
+
+/* 滑出的圆角矩形 */
+.sliding-panel {
+    position: fixed;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 500px;
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+    z-index: 10;
+}
+
+/* 圆角矩形文本样式 */
+.sliding-panel p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* 调整滚动条的样式 */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00ADEF;
+    border-radius: 5px;
+}
