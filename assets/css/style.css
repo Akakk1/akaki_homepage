@@ -67,8 +67,8 @@ nav button:hover {
     bottom: 5%;  /* 距离底部的距离，略微低于Welcome */
     left: 20%;    /* 保持与Welcome左对齐 */
     transform: translate(-50%, 50%);
-    padding: 10px 20px;  /* 调整按钮大小 */
-    font-size: 1rem;  /* 适中字体大小 */
+    padding: 8px 16px;  /* 调整按钮大小 */
+    font-size: 0.8rem;  /* 适中字体大小 */
     font-weight: bold;  /* 加粗 */
     background-color: white;  /* 按钮背景为白色 */
     color: black;  /* 按钮文本颜色为黑色 */
@@ -97,8 +97,8 @@ nav button:hover {
 /* Welcome文本样式 */
 .welcome-text {
     position: absolute;
-    bottom: 10%;  /* 调整距离底部的距离，可以根据需要微调 */
-    left: 20%;    /* 调整距离左侧的距离，可以根据需要微调 */
+    bottom: 50%;  /* 调整距离底部的距离，可以根据需要微调 */
+    left: 50%;    /* 调整距离左侧的距离，可以根据需要微调 */
     transform: translate(-50%, 50%);
     font-size: 8rem;  /* 增大字体 */
     font-weight: bold;  /* 加粗 */
