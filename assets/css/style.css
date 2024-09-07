@@ -16,7 +16,7 @@ nav ul {
     list-style-type: none;
     padding: 20px;
     margin: 0;
-    background-color: #111111;
+    background-color: #000000;
     position: sticky;
     top: 0;
 }
@@ -37,7 +37,7 @@ nav button {
 }
 
 nav button:hover {
-    color: #00ADEF;
+    color: #6f0000;
 }
 
 /* 主内容区域 */
@@ -64,12 +64,11 @@ nav button:hover {
 /* Go to Github按钮样式 */
 .github-button {
     position: absolute;
-    bottom: 5%;  /* 距离底部的距离，略微低于Welcome */
-    left: 20%;    /* 保持与Welcome左对齐 */
-    transform: translate(-50%, 50%);
-    padding: 8px 16px;  /* 调整按钮大小 */
-    font-size: 0.8rem;  /* 适中字体大小 */
-    font-weight: bold;  /* 加粗 */
+    bottom: 12%;  /* 距离底部的距离，略微低于Welcome */
+    left: 8%;    /* 保持与Welcome左对齐 */
+    padding: 10px 15px;  /* 调整按钮大小 */
+    font-size: 1rem;  /* 适中字体大小 */
+    font-weight: lighter;  /* 加粗 */
     background-color: white;  /* 按钮背景为白色 */
     color: black;  /* 按钮文本颜色为黑色 */
     border: none;  /* 去掉边框 */
@@ -81,7 +80,8 @@ nav button:hover {
 
 /* 鼠标悬停效果 */
 .github-button:hover {
-    background-color: #e0e0e0;  /* 鼠标悬停时的背景色 */
+    background-color: #4a0000;  /* 鼠标悬停时的背景色 */
+    color: white;
 }
 
 
@@ -97,11 +97,11 @@ nav button:hover {
 /* Welcome文本样式 */
 .welcome-text {
     position: absolute;
-    bottom: 50%;  /* 调整距离底部的距离，可以根据需要微调 */
-    left: 50%;    /* 调整距离左侧的距离，可以根据需要微调 */
-    transform: translate(-50%, 50%);
-    font-size: 8rem;  /* 增大字体 */
-    font-weight: bold;  /* 加粗 */
+    bottom: 5%;  /* 调整距离底部的距离，可以根据需要微调 */
+    left: 5%;    /* 调整距离左侧的距离，可以根据需要微调 */
+    font-weight: lighter;
+    font-size: 10rem;  /* 增大字体 */
+    font-family: 'Times New Roman', 'Georgia', serif;
     color: white;       /* 白色字体，保持与背景的对比 */
 }
 
