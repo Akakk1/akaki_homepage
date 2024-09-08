@@ -64,25 +64,12 @@
         </div>
     </div>
 
+    <!-- 引用外部JavaScript文件 -->
     <script src="/akaki_homepage/assets/js/navbar.js"></script>
-	<script src="/akaki_homepage/assets/js/dna-animation.js"></script>    
-	<script src="/akaki_homepage/assets/js/welcome.js"></script>
+    <script src="/akaki_homepage/assets/js/dna-animation.js"></script>    
+    <script src="/akaki_homepage/assets/js/welcome.js"></script>
     <script src="/akaki_homepage/assets/js/large-window.js"></script>
-    
-    <script>
-    // JavaScript to dynamically load sections
-    document.querySelectorAll('.left-btn').forEach(button => {
-        button.addEventListener('click', function() {
-            const section = this.getAttribute('data-section');
-            fetch(`/akaki_homepage/_includes/sections/${section}.html`)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('info-display').innerHTML = data;
-            });
-        });
-    });
-    </script>
+    <script src="/akaki_homepage/assets/js/load-sections.js"></script> <!-- 添加这一行 -->
 
 </body>
 </html>
-
