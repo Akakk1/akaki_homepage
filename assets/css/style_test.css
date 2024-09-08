@@ -19,6 +19,8 @@ nav ul {
     background-color: #000000;
     position: sticky;
     top: 0;
+    height: 80px;
+    transition: height 0.5s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 nav li {
@@ -39,61 +41,22 @@ nav button:hover {
     color: #6f0000;
 }
 
-/* 主内容区域 */
-.content h1 {
-    font-size: 4rem;
-    margin-top: 100px;
+/* 当导航栏变扁时 */
+nav.shrink {
+    height: 40px;
+    transition: height 0.3s ease-in-out;
 }
 
-.button {
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease-in-out;
+nav.shrink button {
+    font-size: 1.2vw;
 }
 
-.button:hover {
-    background-color: #e0e0e0;
+/* 欢迎界面样式 */
+.welcome-section {
+
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-/* Go to Github按钮样式 */
-.github-button {
-    position: absolute;
-    bottom: 5%;  /* 距离底部的距离，略微低于Welcome */
-    left: 5%;
-    padding: 0.3vw 0.8vw;  /* 调整按钮大小 */
-    font-size: 1.5vw;  /* 适中字体大小 */
-    font-weight: lighter;  /* 加粗 */
-    background-color: white;  /* 按钮背景为白色 */
-    color: black;  /* 按钮文本颜色为黑色 */
-    border: none;  /* 去掉边框 */
-    border-radius: 25vw;  /* 增加圆角 */
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease-in-out;    
-}
-
-/* 鼠标悬停效果 */
-.github-button:hover {
-    background-color: #4a0000;  /* 鼠标悬停时的背景色 */
-    color: white;
-}
-
-
-/* 图片设置在右下角 */
-.bottom-right-image {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    max-width: 80vw;
-    height: auto;
-}
-
-/* Welcome文本样式 */
 .welcome-text {
     position: absolute;
     bottom: 5%;  /* 调整距离底部的距离，可以根据需要微调 */
@@ -102,44 +65,131 @@ nav button:hover {
     font-size: 10vw;  /* 增大字体 */
     font-family: 'Times New Roman', 'Georgia', serif;
     color: white;       /* 白色字体，保持与背景的对比 */
+    transition: color 0.3s ease-in-out;
 }
 
+.github-button {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    padding: 0.3vw 0.8vw;
+    font-size: 1.5vw;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 25vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
 
-
-/* 滑出的圆角矩形 */
-.sliding-panel {
-    position: fixed;
-    top: -300px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 500px;
-    background-color: #333333;
+.github-button:hover {
+    background-color: #4a0000;
     color: white;
+}
+
+.bottom-right-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 80vw;
+    height: auto;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* 大窗口内容区域 */
+.large-window {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
     padding: 20px;
-    border-radius: 20px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
-    z-index: 10;
+    transition: background-color 0.3s ease-in-out;
 }
 
-/* 圆角矩形文本样式 */
-.sliding-panel p {
-    margin: 0;
-    font-size: 1.2rem;
+/* 隐藏类 */
+.hidden {
+    display: none;
 }
 
-/* 调整滚动条的样式 */
-::-webkit-scrollbar {
-    width: 10px;
+/* 左侧菜单栏 */
+.left-menu {
+    position: relative;
+    top: 50%;
+    /*transform: translateY(-50%);*/
+    width: 20%;
+    height: 80%;    
+    background-color: #4e0000;
+    padding: 0%;
+    font-family: Times New Roman;
+    transition: background-color 0.3s ease-in-out;
 }
 
-::-webkit-scrollbar-track {
-    background: #111111;
+.left-menu img.profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: ;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: #00ADEF;
-    border-radius: 5px;
+.left-menu ul {
+    list-style: none;
+    padding: 0px;
 }
+
+.left-menu li {
+    margin: 20% 0;
+}
+
+.left-btn {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 2vw;
+    font-family: Times New Roman;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.left-btn:hover {
+    color: #5a0000;
+    background: #ffffff
+}
+
+/* 右侧信息栏 */
+.right-content {
+    position: absolute;
+    width: 100%;
+    float: left;
+    top: 20%;
+    padding: ;
+    font-family: Times New Roman;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* 返回按钮样式 */
+.back-button {
+    position: relative;
+    top: 5%;
+    left: -20%;
+    padding:;
+    font-size: 2vw;
+    font-weight: bold;
+    background-color: #ffffff00;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: Times New Roman;    
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #ffffff00;
+    color: #740000;
+    transition: background-color 0.3s ease-in-out;
+}
+
 
