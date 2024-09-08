@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Homepage</title>
-    <link rel="stylesheet" href="/akaki_homepage/assets/css/style.css">
+    <link rel="stylesheet" href="/akaki_homepage/assets/css/global.css">
+    <link rel="stylesheet" href="/akaki_homepage/assets/css/navbar.css">
+    <link rel="stylesheet" href="/akaki_homepage/assets/css/welcome.css">
+    <link rel="stylesheet" href="/akaki_homepage/assets/css/large-window.css">
+    <link rel="stylesheet" href="/akaki_homepage/assets/css/dna-animation.css">	
 </head>
 <body>
     <!-- 顶部导航栏 -->
@@ -15,6 +19,11 @@
             <li><button class="nav-btn" id="tools">PAGES&TOOLS</button></li>
         </ul>
     </nav>
+	
+    <!-- DNA双螺旋-->	
+	<div class="dna-animation hidden" id="dna-container">
+		<pre id="dna"></pre>
+	</div>
 
     <!-- 欢迎界面内容 -->
     <div class="welcome-section">
@@ -55,6 +64,9 @@
         </div>
     </div>
 
-    <script src="/akaki_homepage/assets/js/script.js"></script>
+    <script src="/akaki_homepage/assets/js/navbar.js"></script>
+	<script src="/akaki_homepage/assets/js/dna-animation.js"></script>    
+	<script src="/akaki_homepage/assets/js/welcome.js"></script>
+    <script src="/akaki_homepage/assets/js/large-window.js"></script>
 </body>
 </html>
