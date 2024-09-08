@@ -44,6 +44,7 @@ nav button:hover {
 /* 当导航栏变扁时 */
 nav.shrink {
     height: 40px;
+    transition: height 0.3s ease-in-out;
 }
 
 nav.shrink button {
@@ -52,13 +53,18 @@ nav.shrink button {
 
 /* 欢迎界面样式 */
 .welcome-section {
-    position: relative;
+
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .welcome-text {
-    font-size: 4rem;
-    margin-top: 100px;
+    position: absolute;
+    bottom: 5%;  /* 调整距离底部的距离，可以根据需要微调 */
+    left: 5%;    /* 调整距离左侧的距离，可以根据需要微调 */
+    font-weight: lighter;
+    font-size: 10vw;  /* 增大字体 */
+    font-family: 'Times New Roman', 'Georgia', serif;
+    color: white;       /* 白色字体，保持与背景的对比 */
     transition: color 0.3s ease-in-out;
 }
 
@@ -98,7 +104,7 @@ nav.shrink button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 20px;
     transition: background-color 0.3s ease-in-out;
@@ -111,67 +117,78 @@ nav.shrink button {
 
 /* 左侧菜单栏 */
 .left-menu {
+    position: relative;
+    top: 50%;
+    /*transform: translateY(-50%);*/
     width: 20%;
-    float: left;
-    background-color: #222;
-    height: 100%;
-    padding: 20px;
+    height: 80%;    
+    background-color: #4e0000;
+    padding: 0%;
+    font-family: Times New Roman;
     transition: background-color 0.3s ease-in-out;
 }
 
 .left-menu img.profile-pic {
     width: 100px;
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: ;
 }
 
 .left-menu ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
 }
 
 .left-menu li {
-    margin: 10px 0;
+    margin: 20% 0;
 }
 
 .left-btn {
     background: none;
     color: #fff;
     border: none;
-    font-size: 1.2rem;
+    font-size: 2vw;
+    font-family: Times New Roman;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 }
 
 .left-btn:hover {
-    color: #6f0000;
+    color: #5a0000;
+    background: #ffffff
 }
 
 /* 右侧信息栏 */
 .right-content {
-    width: 75%;
-    float: right;
-    padding: 20px;
+    position: absolute;
+    width: 100%;
+    float: left;
+    top: 20%;
+    padding: ;
+    font-family: Times New Roman;
     transition: opacity 0.3s ease-in-out;
 }
 
 /* 返回按钮样式 */
 .back-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #FFFFFF;
-    color: #000;
+    position: relative;
+    top: 5%;
+    left: -20%;
+    padding:;
+    font-size: 2vw;
+    font-weight: bold;
+    background-color: #ffffff00;
+    color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
     cursor: pointer;
+    font-family: Times New Roman;    
     transition: background-color 0.3s ease-in-out;
 }
 
 .back-button:hover {
-    background-color: #6f0000;
-    color: #FFF;
+    background-color: #ffffff00;
+    color: #740000;
+    transition: background-color 0.3s ease-in-out;
 }
 
