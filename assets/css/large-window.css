@@ -25,9 +25,11 @@
 }
 
 .left-menu img.profile-pic {
-    width: 100px;
-    height: 100px;
-    margin-bottom: ;
+    position: relative;
+    top: -20px;
+    width: 80%;
+    height:80%;
+    margin-bottom:;
 }
 
 .left-menu ul {
@@ -36,7 +38,7 @@
 }
 
 .left-menu li {
-    margin: 20% 0;
+    margin: 10% 0;
 }
 
 .left-btn {
