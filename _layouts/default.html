@@ -4,32 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Homepage</title>
-    <link rel="stylesheet" href="/akaki_homepage/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
- 
     <!-- 顶部导航栏 -->
     <nav>
         <ul>
-            <li><button class="nav-btn" id="edu-exp">Education & Experience</button></li>
-            <li><button class="nav-btn" id="research">Research Interests</button></li>
-            <li><button class="nav-btn" id="papers">Papers</button></li>
-            <li><button class="nav-btn" id="software">Softwares</button></li>
-            <li><button class="nav-btn" id="contact">Contact</button></li>
+            <li><button class="nav-btn" id="introduction">INTRODUCTION</button></li>
+            <li><button class="nav-btn" id="blogs">BLOGS</button></li>
+            <li><button class="nav-btn" id="tools">PAGES&TOOLS</button></li>
         </ul>
     </nav>
 
-    <!-- 内容区域 -->
-    <h1 class="welcome-text">Welcome</h1>
-    <button class="github-button" onclick="window.location.href='https://github.com/Akakk1'">Go to Github</button>
-    <img src="/akaki_homepage/assets/makise.png" class="bottom-right-image">
-    
-
-    <!-- 滑出的圆角矩形文本框 -->
-    <div class="sliding-panel" id="sliding-panel">
-        <p>This is the sliding panel content for the section you clicked!</p>
+    <!-- 欢迎界面内容 -->
+    <div class="welcome-section">
+        <h1 class="welcome-text">Welcome</h1>
+        <button class="github-button" onclick="window.location.href='https://github.com/Akakk1'">Go to Github</button>
+        <img src="assets/makise.png" class="bottom-right-image">
     </div>
 
-    <script src="/akaki_homepage/assets/js/script.js"></script>
+    <!-- 大窗口内容区域 -->
+    <div class="large-window" id="large-window">
+        <button class="back-button" id="back-button">Back to Home</button>
+        <div class="introduction-content hidden" id="introduction-content">
+            <!-- 左侧菜单栏 -->
+            <div class="left-menu">
+                <img src="assets/placeholder.png" alt="Profile Photo" class="profile-pic">
+                <ul>
+                    <li><button class="left-btn" data-section="edu-exp">Education & Experience</button></li>
+                    <li><button class="left-btn" data-section="research">Research Interests</button></li>
+                    <li><button class="left-btn" data-section="papers">Papers</button></li>
+                    <li><button class="left-btn" data-section="softwares">Softwares</button></li>
+                    <li><button class="left-btn" data-section="contact">Contact</button></li>
+                </ul>
+            </div>
+            <!-- 右侧信息栏 -->
+            <div class="right-content">
+                <p id="info-display">Select a category from the left to view details.</p>
+            </div>
+        </div>
+
+        <div class="blogs-content hidden" id="blogs-content">
+            <h2>Blog Posts</h2>
+            <p>Blogging interface will be here...</p>
+        </div>
+
+        <div class="tools-content hidden" id="tools-content">
+            <h2>Pages & Tools</h2>
+            <p>Pages and tools interface will be here...</p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
