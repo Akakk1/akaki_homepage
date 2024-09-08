@@ -1,0 +1,24 @@
+/* Add these styles to your CSS file */
+.dna-animation {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    font-family: monospace;
+    background-color: black;
+    color: white;  /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;	
+}
+
+.dna-animation pre {
+    font-size: 1.5vw;
+    font-weight: bold;
+    line-height: 5vh;
+    transform: rotate(-30deg);  /* Rotate the DNA */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;	
+}
