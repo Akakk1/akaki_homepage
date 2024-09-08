@@ -46,4 +46,3 @@ document.getElementById('back-button').addEventListener('click', function() {
     // 导航栏恢复原始大小
     document.querySelector('nav').classList.remove('shrink');
 });
-
